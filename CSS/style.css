@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'poppins',sans-serif;
+}
+
+:root{
+    --sm-space:1rem;
+    --xsm-space:1.5rem;
+    --m-space: 2rem;
+    --xm-space: 2.5rem;
+    --lg-space: 3rem;
+    --xlg-space: 3.5rem;
+    --x2lg-space: 4rem;
+    --primary-color: #FE5303;
+    --secondary-color: #BDBDBD;
+}
+
+button{
+    cursor: pointer;
+}
+
+
+
+ .wrapper{
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+ }
+/* HEADER */
+
+header{
+    background: url("/images/image-1.png");
+    background-color: rgba(10, 10, 14,.5);;
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    padding: var(--lg-space) 0;
+    min-height: 100vh;
+}
+
+.header-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo svg{ 
+    width: 70%;
+}
+.reservation{
+    display: flex;
+    align-items: center;
+    background: var(--primary-color);
+    border: none;
+    border-radius: 50px;
+    padding: .3rem .8rem;
+    color: #FFFFFF;
+    font-size: .7rem;
+    letter-spacing: .1rem;
+}
+.hero-section{
+    margin-top: var(--m-space);
+    color: #FFFFFF;
+}
+.hero-heading{
+    font-family: 'Playfair Display';
+    font-size: var(--lg-space);
+}
+.play-adventure{
+    display: flex;
+    align-items: center;
+    margin-top: var(--m-space);
+    border: none;
+    background-color: transparent;
+    color: #FFFFFF;
+    font-size: var(--xsm-space);
+}
+.play-adventure i{
+    margin-left: .5rem;
+    padding: .5rem;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+}
+.bookings{
+    max-width: 768px;
+    margin-top: var(--xm-space);
+    color: black;
+}
+.bookings-box{
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: var(--sm-space);
+    margin-bottom: var(--sm-space);
+}
+
+.booking-input label{
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+.booking-input input, select{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    margin-top: .5rem;
+    font-weight: 600;
+}
+.booking-input input{
+    margin-bottom: var(--sm-space);
+}
+.book-now{
+    border: none;
+    border-radius: 10px;
+    box-shadow:  0px 4px 20px rgba(254, 83, 3, 0.6);
+    color: #FFFFFF;
+    background-color: var(--primary-color);
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 1.5rem;
+    margin-bottom: var(--xsm-space);
+    
+}
+
+
+/* END OF HEADER */
+
+/* MAIN */
+p{
+    margin-bottom: var(--sm-space);
+    color: #828282;
+}
+
+.section-name{
+    color: var(--secondary-color);
+    margin-top: var(--x2lg-space);
+    margin-bottom: var(--xsm-space);
+}
+
+.section-heading{
+    margin-bottom: var(--sm-space);
+}
+
+.section-heading span{
+    color: var(--primary-color);
+}
+
+/* ABOUT US */
+
+.about-us img{
+    width: 100%;
+    border-radius: 12px;
+}
+.about-us__content__left img{
+    margin-bottom: var(--sm-space);
+}
+
+/* END OF ABOUT US */
+
+
+/* ACCOMMODATION */
+.text-button{
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    color: var(--primary-color);
+    margin-bottom: var(--sm-space);
+}
+
+.stay-card{
+    position: relative;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    height: 300px;
+    overflow: hidden;
+    margin-bottom: var(--xsm-space);
+    border-radius: 12px;
+}
+.stay-card__details{
+    position: absolute;
+    bottom: var(--sm-space);
+    left: var(--sm-space);
+    color: hsl(0, 0%, 100%);
+}
+.stay-card img{
+    
+    width: 100%;
+    height: 100%;
+    
+}
+.stay-card span{
+    margin-left: .5rem;
+    color: var(--secondary-color);
+    font-size: .75rem;
+}
+
+/* END OF ACCOMMODATION */
+
+
+/* TESTIMONIALS */
+.testimonials{
+    background-color: #F2F2F2;
+    padding: var(--xsm-space) 0;
+}
+.testimony-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.testimony-container div{
+    flex: 1 250px;
+}
+
+.card{
+    background-color: white;
+    border-radius: 12px 12px 12px 0;
+    padding: var(--sm-space);
+    height: 300px;
+    margin-right: .5rem;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-heading{
+    margin: var(--xsm-space) 0;
+}
+.person{
+   display: flex;
+   align-items: center;
+   margin: var(--sm-space) 0;
+}
+.person img{
+    width: 15%;
+    margin-right: var(--sm-space);
+}
+.country{
+    font-size: .75rem;
+    color: var(--secondary-color);
+}
+
+.copy{
+    padding: var(--xlg-space) 0;
+}
+
+
+/* END OF MAIN */
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+@media screen and (min-width:678px){
+    .wrapper{
+        width: 80%;
+    }
+ 
+    .hero-heading{
+        width: 70%;
+    }
+    .bookings-box{
+        width: 100%;
+        
+        display: flex;
+        justify-content: space-between;
+        padding: .7rem;
+    }
+    .booking-input input{
+        margin-bottom: 0;
+    }
+    .book-now{
+       width: 25%;
+    }
+
+    .about-us__content{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: var(--xsm-space);
+    }
+
+    .about_us__content__right{
+      display: grid;
+    }
+    .about_us__content__right img{
+        order: -1;
+        margin-bottom: var(--sm-space);
+    }
+    
+    .about_us__content__right p:nth-of-type(2){
+        margin-bottom: 0;
+    }
+
+    .stays{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: var(--xsm-space);
+    }
+    .stay-card{
+        margin-bottom: 0;
+        height: 100%;
+    }
+    
+    .col-1{
+        grid-column: 1 / span 2;
+    }
+}
+@media screen and (min-width:1440px){
+    .bookings{
+        display: flex;
+        justify-content: space-between;
+    }
+    .bookings-box{
+        margin-bottom: 0;
+    }
+    .book-now{
+        margin-left: .5rem;
+        margin-bottom: 0;
+   }
+
+}
